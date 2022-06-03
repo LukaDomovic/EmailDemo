@@ -9,11 +9,11 @@ class MailSenderService (private val emailSender: JavaMailSender) {
 
     fun sendEmail(subject: String, content: String, email: String)
     {
-        val message = SimpleMailMessage()
-        message.setSubject(subject)
-        message.setText(content)
-        message.setTo(email)
+        val emailMessage = SimpleMailMessage()
+        emailMessage.setSubject(subject)
+        emailMessage.setText(content)
+        emailMessage.setTo(email)
 
-        emailSender.send(message)
+        emailSender.send(emailMessage)
     }
 }

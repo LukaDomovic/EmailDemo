@@ -8,12 +8,12 @@ const router = createRouter({
     {
       path: "/",
       name: "compose",
-      component: ComposeView
+      component: ComposeView,
     },
     {
       path: "/mailbox",
       name: "mailbox",
-      component: MailboxView
+      component: MailboxView,
     },
   ],
 });

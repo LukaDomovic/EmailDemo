@@ -1,6 +1,7 @@
 package com.example.emailService.config
 
-import com.example.emailService.properties.MailSenderProperties
+import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.boot.context.properties.ConstructorBinding
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -31,3 +32,16 @@ class MailSenderConfig(
         properties["mail.debug"] = mailSenderProperties.debug
     }
 }
+
+@ConstructorBinding
+@ConfigurationProperties(prefix = "mail-sender")
+class MailSenderProperties(
+    val host: String,
+    val port: Int,
+    val username: String,
+    val password: String,
+    val protocol: String,
+    val auth: Boolean,
+    val starttlsEnable: Boolean,
+    val debug: Boolean
+)

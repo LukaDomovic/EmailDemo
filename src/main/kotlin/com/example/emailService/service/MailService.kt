@@ -6,13 +6,13 @@ import com.example.emailService.entity.Mail
 import org.springframework.stereotype.Service
 
 @Service
-class MailService(val db: MailRepository)
+class MailService(val emailRepository: MailRepository)
 {
-    fun findAllMail(): List<Mail> = db.findAllMail()
-    fun findPendingMail(): List<Mail> = db.findPendingMail()
+    fun findAllMail() = emailRepository.findAllMail()
+    fun findPendingMail() = emailRepository.findPendingMail()
 
     fun postMail(mail: Mail)
     {
-        db.save(mail)
+        emailRepository.save(mail)
     }
 }
