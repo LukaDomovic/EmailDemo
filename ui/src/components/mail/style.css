@@ -1,0 +1,40 @@
+.mail
+{
+    display: flex;
+    justify-items: flex-start;
+    border-bottom: 1px gray solid;
+}
+
+.mail:hover
+{
+    border: 1px gray solid;
+    box-shadow: -3px 2px 2px lightgray;
+}
+
+.mail-email
+{
+    display: flex;
+    padding: 0.5rem;
+    flex-shrink: 1;
+    min-width: 20rem;
+}
+
+.mail-subject
+{
+    display: flex;
+    flex-grow: 20;
+    padding: 0.5rem;
+}
+
+.mail-content
+{
+    display: flex;
+    border: 1px gray solid;
+    background-color: lightgray;
+    padding: 0.5rem;
+}
+
+.mail-content--disabled
+{
+    display: none;
+}

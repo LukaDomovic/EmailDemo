@@ -1,0 +1,19 @@
+nav
+{
+    border-bottom: 2px green solid; 
+    padding-bottom: 0.25rem;
+}
+
+nav a
+{
+    color:green;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav a:hover
+{
+    color: lime;
+    background-color: gray;
+}
