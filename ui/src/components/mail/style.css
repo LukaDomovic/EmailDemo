@@ -5,6 +5,16 @@
     border-bottom: 1px gray solid;
 }
 
+.mail-content--pending
+{
+    background-color: lightyellow;
+}
+
+.mail-content--sent
+{
+    background-color: lightgreen;
+}
+
 .mail:hover
 {
     border: 1px gray solid;

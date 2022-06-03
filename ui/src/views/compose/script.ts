@@ -23,7 +23,8 @@ export default defineComponent({
                 {
                     email: this.email,
                     subject: this.subject,
-                    content: this.content
+                    content: this.content,
+                    pending: true
                 }
             })
             .then(()=>{

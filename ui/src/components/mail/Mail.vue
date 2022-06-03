@@ -1,5 +1,5 @@
 <template>
-    <div class="mail" @click="ShowContent()">
+    <div :class="mailClass" @click="ShowContent()">
         <div class="mail-email">{{ email }}</div>
         <div class="mail-subject">{{ subject }}</div>
     </div>

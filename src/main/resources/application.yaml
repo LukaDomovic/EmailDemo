@@ -7,3 +7,26 @@ spring:
     platform: h2
   h2:
     console.enabled: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        debug: true
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+mail-sender:
+  host: smtp.gmail.com
+  port: 587
+  username:
+  password:
+  protocol: smtp
+  auth: true
+  starttls-enable: true
+  debug: true
